@@ -1,4 +1,0 @@
-// Copyright (c) 2024 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import{isPrimitive as r}from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer@v0.1.0-esm/index.mjs";import e from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-collection@v0.1.0-esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/string-format@v0.1.1-esm/index.mjs";function n(n){var i,s,a,o,d;if("object"!=typeof n||null===n)throw new TypeError(t("invalid argument. Must provide an ndarray. Value: `%s`.",n));if(a=n.length,r(a))return a;if(s=n.shape,!e(s))throw new TypeError(t("invalid argument. Must provide an ndarray. Value: `%s`.",n));if(0===(i=s.length))return 0;for(a=1,d=0;d<i;d++){if(o=s[d],!r(o))throw new TypeError(t("invalid argument. Must provide an ndarray. Value: `%s`.",n));a*=o}return a}export{n as default};
-//# sourceMappingURL=index.mjs.map
