@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,26 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Return the number of elements in an ndarray.
+* Returns the number of elements in an ndarray.
 *
-* @module @stdlib/ndarray-numel
+* @param x - input ndarray
+* @returns number of elements
 *
 * @example
 * var zeros = require( '@stdlib/ndarray-zeros' );
-* var numel = require( '@stdlib/ndarray-numel' );
 *
 * var n = numel( zeros( [ 3, 3, 3 ] ) );
 * // returns 27
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function numel( x: ndarray ): number;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = numel;
